@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conditional Profile Card</title>
+    <script src="https://kit.fontawesome.com/d239cac0a2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="profileCard.css" type="text/css" />
+</head>
+
+<body>
+    <div id='container'>
+
+        <label for='cover-input'>
+            Include Cover:
+            <br />
+            <select id='include-cover'>
+                <option value='false'>False</option>
+                <option value='true'>True</option>
+            </select>
+        </label>
+
+        <label for='first-name'>
+            First Name: 
+            <br />
+            <input id='firstName' type='text' />
+        </label>
+
+        <label id='lastName' for='last-name'>
+           Last Name: 
+            <br />
+            <input type='text' />
+        </label>
+
+        <label for='cover-input'>
+            S.M Position:
+            <br />
+            <select id='social-position'>
+                <option value='left'>left</option>
+                <option value='right'>right</option>
+            </select>
+        </label>
+
+        <label for='twitter'>
+           Twitter: 
+            <br />
+            <input value='null' type='text' />
+        </label>
+
+        <label for='Github'>
+           Github: 
+            <br />
+            <input value='null' type='text' />
+        </label>
+
+        <label for='LinkedIn'>
+           LinkedIn: 
+            <br />
+            <input value='null' type='text' />
+        </label>
+
+        <label for='Instagram'>
+           Instagram: 
+            <br />
+            <input value='null' type='text' />
+        </label>
+
+        <label for='role'>
+            Role:
+            <br />
+            <select>
+                <option>null</option>
+            </select>
+        </label>
+
+        <label for='city'>
+            City:
+            <br />
+            <select>
+                <option>null</option>
+            </select>
+        </label>
+
+        <label for='country'>
+            Country:
+            <br />
+            <select>
+                <option>null</option>
+            </select>
+        </label>
+    </div>
+
+    <div id='card-body'>
+        <div id='user-image'>
+        </div>
+        <section id='upper-half'></section>
+        <section id='lower-half'>
+            <div id='text-block'>
+                <span id='firstNameEl'>First Name</span>
+                <span id='lastNameEl'>Last Name</span>
+                <p class='mute-text'>Web Developer</p>
+                <p class='mute-text'>Miami, USA</p>
+            </div>
+            <ul id='social-links' class='right left'>
+                <li><i class="fab fa-twitter"></i></li>
+
+                <li><i class="fab fa-github-alt"></i></li>
+
+                <li><i class="fab fa-linkedin-in"></i></li>
+
+                <li><i class="fab fa-instagram"></i></li>
+            </ul>
+
+    </div>
+
+    </section>
+
+    <script src='profileCard.js'></script>
+</body>
+
+</html>
